@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path
+      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+    />
+  </symbol>
+</svg>
+<div class="card mt-3">
+  <div class="card-body">
+    <form [formGroup]="formGroup" novalidate (ngSubmit)="addProduct()">
+      <div class="form-group">
+        <label class="col-md-4">Product Name</label>
+        <input
+          id="name"
+          type="text"
+          class="form-control"
+          [formControlName]="formControlName.NAME"
+        />
+      </div>
+      <div
+        *ngIf="name.invalid && (name.dirty || name.touched)"
+        class="alert alert-danger"
+      >
+        <div *ngIf="errorName">Product Name is required.</div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Product Description </label>
+        <textarea
+          id="description"
+          class="form-control"
+          rows="7"
+          cols="5"
+          [formControlName]="formControlName.DESCRIPTION"
+        ></textarea>
+      </div>
+      <div
+        *ngIf="
+          description.invalid && (description.dirty || description.touched)
+        "
+        class="alert alert-danger"
+      >
+        <div *ngIf="errorDescription">Product Description is required.</div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Product Price</label>
+        <input
+          id="price"
+          type="text"
+          class="form-control"
+          [formControlName]="formControlName.PRICE"
+        />
+      </div>
+      <div
+        *ngIf="price.invalid && (price.dirty || price.touched)"
+        class="alert alert-danger"
+      >
+        <div *ngIf="errorPrice">Product Price is required.</div>
+        <div *ngIf="!errorPrice">price writing error.</div>
+      </div>
+      <div class="form-group">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="formGroup.pristine || formGroup.invalid"
+        >
+          Create Product
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

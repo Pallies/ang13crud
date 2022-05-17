@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 2,
+      "productName": "beurre",
+      "productDescription": "oméga 3",
+      "productPrice": "4.36"
+    },
+    {
+      "id": 3,
+      "productName": "saumon",
+      "productDescription": "poisson d'origine de Norvège.\nprix au kilo",
+      "productPrice": "11.35"
+    },
+    {
+      "id": 4,
+      "productName": "Porc",
+      "productDescription": "produit d'origine Française.\nprix au kilo",
+      "productPrice": "5.78"
+    },
+    {
+      "id": 5,
+      "productName": "BN",
+      "productDescription": "biscuits Nantais par lot de 16",
+      "productPrice": "4.5"
+    },
+    {
+      "id": 6,
+      "productName": "farine",
+      "productDescription": "farine de blé noir",
+      "productPrice": "2.56"
+    },
+    {
+      "id": 7,
+      "productName": "produit",
+      "productDescription": "à supprimer",
+      "productPrice": "0.00"
+    },
+    {
+      "id": 8,
+      "productName": "noix de cajou",
+      "productDescription": "gâteaux d'apéritif",
+      "productPrice": "4.5"
+    },
+    {
+      "id": 9,
+      "productName": "pomme",
+      "productDescription": "fruit : pomme de type golden et le prix est désigné au kilo",
+      "productPrice": "3.79"
+    },
+    {
+      "id": 10,
+      "productName": "pomme",
+      "productDescription": "fruit : pomme de type golden et le prix est désigné au kilo",
+      "productPrice": "3.79"
+    }
+  ]
+}
