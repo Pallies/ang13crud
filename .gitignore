@@ -10,7 +10,10 @@
 /node_modules
 npm-debug.log
 yarn-error.log
-
+# cypress
+/cypress
+# compodoc
+/documentation
 # IDEs and editors
 .idea/
 .project
