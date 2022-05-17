@@ -18,10 +18,10 @@ describe("interaction d'un produit", () => {
     cy.get('app-toast').should('be.visible')
   });
 
-  it.only("modification d'un produit",()=>{
-    cy.get('#aProducts').click();
+  // it("modification d'un produit",()=>{
+  //   cy.get('#aProducts').click();
 
-  })
+  // })
 
   it("suppression d'un produit", () => {
     cy.get('#aProducts').click();
